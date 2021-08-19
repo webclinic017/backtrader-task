@@ -25,7 +25,7 @@ cerebro = bt.Cerebro()  # create a "Cerebro" engine instance
 #                                  todate=datetime(2012, 12, 31),
 #                                  version='')
 
-data = bt.feeds.PandasData(dataname=yf.download('SPY', datetime(2011, 1, 1), datetime(2012, 12, 31)))
+data = bt.feeds.PandasData(dataname=yf.download('MSFT', datetime(2011, 1, 1), datetime(2012, 12, 31)))
 
 
 cerebro.adddata(data)  # Add the data feed
